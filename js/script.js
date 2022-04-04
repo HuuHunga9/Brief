@@ -10,6 +10,10 @@ document.querySelector('.modol').addEventListener('click', function () {
     document.querySelector('.modol').classList.remove('activee');
 })
 
+document.querySelector('.header--navbar').addEventListener('click', function (e) {
+    e.stopPropagation();
+})
+
 window.addEventListener('load', function () {
     document.querySelector('#menu').classList.remove('fa-times')
     document.querySelector('.header--navbar').classList.remove('active');
